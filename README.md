@@ -7,7 +7,8 @@
   * 创建存放数据的目录，如d:/data/db
   * 配置信息
     * mongod --config D:\data\dbConf\mongodb.conf --serviceName "mongodb" --serviceDisplayName "mongodb1" --install
-    * ```
+    *
+    ```
         #数据库路径
         dbpath=d:\data\db
         #日志文件路径
