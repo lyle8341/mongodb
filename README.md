@@ -6,10 +6,22 @@
   * 配置path
   * 创建存放数据的目录，如d:/data/db
   * 配置信息
-    * mongod --bind_ip yourIPadress --logpath "d:\data\dbConf\mongodb.log" --logappend --dbpath "d:\data\db" --port yourPortNumber --serviceName "YourServiceName" --serviceDisplayName "YourServiceName" --install
-
+    * mongod --config D:\data\dbConf\mongodb.conf --serviceName "mongodb" --serviceDisplayName "mongodb1" --install
+    * ```
+        #数据库路径
+        dbpath=d:\data\db
+        #日志文件路径
+        logpath=d:\data\dbLog\mongodb.log
+        logappend=true
+        #启用日志文件
+        journal=true
+        jsonp=true
+        bind_ip=127.0.0.1
+        port=27017
+      ```
+    * 访问http://localhost:27017和http://localhost:28017
 ### 3. 启动
   * 启动mongoDB
-    * mongod --dbpath d:\data\db(如果不跟路径，默认使用\data\db,即如果当前路径是c:xxxx/yyy/zz,则默认使用路径c:\data\db)
+    * net start mongodb1
   * 启动mongoDB Shell
     * mongo
