@@ -20,6 +20,7 @@
         port=27017
       ```
     * 访问http://localhost:27017和http://localhost:28017
+
 ### 3. 启动
   * 启动mongoDB
     * net start mongodb1
