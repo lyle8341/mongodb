@@ -25,7 +25,7 @@
 		port=27017
 		#认证
 		#auth=false
-		#管理
+		#管理,作用是开启+1000端口
 		rest=true
 		#主节点配置
 		#master = true
