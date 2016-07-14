@@ -19,18 +19,14 @@
 	logappend=true
 	#启用日志文件
 	journal=true
-
+	#绑定ip
 	bind_ip=127.0.0.1
-
 	#端口
 	port=27017
-
 	#认证
 	#auth=false
-
 	#管理
 	rest=true
-
 	#主节点配置
 	#master = true
     ```
